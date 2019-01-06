@@ -1,0 +1,30 @@
+# ircts configuration
+
+# the server being tested
+server:
+  # address to find the server on
+  address: localhost:6667
+
+  # whether to use TLS when connecting
+  tls: false
+
+  # connection password, if required
+  # password: letmein
+
+  # whether to reconnect all clients between each test
+  # do this on servers you control or if you have disabled connection
+  reset-between-tests: true
+
+# user accounts, e.g. to login with using sasl
+accounts:
+  # first account
+  -
+    # SASL username
+    username: daniel
+    # SASL password
+    password: password
+
+    # second account
+  -
+    username: alice
+    password: password
